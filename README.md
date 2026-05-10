@@ -8,29 +8,6 @@ Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp
 - Database Connector: mysql-connector-python
 - Testing: Python threading for concurrency tests
 
-
-## PROJECT STRUCTURE
-│
-├── README.txt
-├── Code/
-│   ├── app.py                 (Main Flask application)
-│   ├── concurrency_test.py    (Concurrency simulation)
-│   ├── templates/             (HTML templates)
-│   │   ├── base.html
-│   │   ├── index.html
-│   │   ├── login.html
-│   │   ├── queries.html
-│   │   ├── query_results.html
-│   │   ├── add_product.html
-│   │   ├── vendor_dashboard.html
-│   │   ├── cart.html
-│   │   └── ...
-│   └── static/
-│       └── style.css          (CSS stylesheet)
-│
-├── SQL Scripts (CREATE + INSERT + QUERIES).pdf 
-
-
 ### RUN THE APPLICATION
 1. pip install flask mysql-connector-python==8.0.33
 2. Start the Flask development server: source venv/bin/activate (won't be the same for you tho)
