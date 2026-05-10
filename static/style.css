@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Arial Rounded MT Bold', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e6e6fa 0%, #d8bfd8 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #9370db, #8a2be2);
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.navbar span {
+    color: #ffeb3b;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Main container */
+.container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Home page */
+.home-container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(147, 112, 219, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Products table */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.products-table thead {
+    background: linear-gradient(to right, #9370db, #8a2be2);
+    color: white;
+}
+
+.products-table th {
+    padding: 18px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.products-table td {
+    padding: 18px;
+    border-bottom: 1px solid #e6e6fa;
+    color: #444;
+}
+
+.products-table tbody tr:hover {
+    background-color: #f3e5ff;
+    transition: background 0.3s;
+}
+
+/* Buttons */
+.action-btn {
+    background: linear-gradient(to right, #9c88ff, #8c7ae6);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+    font-weight: bold;
+}
+
+.action-btn:hover {
+    background: linear-gradient(to right, #8c7ae6, #9c88ff);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(156, 136, 255, 0.4);
+}
+
+.cart-link {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background: linear-gradient(to right, #ff9ff3, #f368e0);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.cart-link:hover {
+    background: linear-gradient(to right, #f368e0, #ff9ff3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(243, 104, 224, 0.4);
+}
+
+/* Login page */
+html, body.login-page {
+    height: 100%;
+    margin: 0;
+}
+
+body.login-page {
+    background: linear-gradient(135deg, #e6e6fa 0%, #d8bfd8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(147, 112, 219, 0.25);
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.login-container h2 {
+    color: #6a5acd;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.login-container label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #555;
+    text-align: left;
+    font-weight: 600;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 2px solid #d8bfd8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #fafafa;
+    transition: border 0.3s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus,
+.login-container select:focus {
+    border-color: #9370db;
+    outline: none;
+    background: #fff;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(to right, #9370db, #8a2be2);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 15px;
+}
+
+.login-container input[type="submit"]:hover {
+    background: linear-gradient(to right, #8a2be2, #9370db);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
+}
+
+.register-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+.register-link a {
+    color: #9370db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #8a2be2;
+    text-decoration: underline;
+}
+
+/* Queries page */
+.queries-container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(147, 112, 219, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+    backdrop-filter: blur(10px);
+}
+
+.queries-container h1 {
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.query-list {
+    list-style: none;
+    padding: 0;
+}
+
+.query-list li {
+    margin-bottom: 20px;
+}
+
+.query-link {
+    display: block;
+    background: linear-gradient(to right, #9c88ff, #8c7ae6);
+    color: white;
+    padding: 18px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(156, 136, 255, 0.3);
+}
+
+.query-link:hover {
+    background: linear-gradient(to right, #8c7ae6, #9c88ff);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(156, 136, 255, 0.5);
+}
+
+/* Query results page */
+.results-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(147, 112, 219, 0.25);
+    max-width: 1200px;
+    margin: 40px auto;
+    backdrop-filter: blur(10px);
+}
+
+.results-container h2 {
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.results-table thead {
+    background: linear-gradient(to right, #9370db, #8a2be2);
+    color: white;
+}
+
+.results-table th {
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.results-table td {
+    padding: 18px;
+    border-bottom: 1px solid #e6e6fa;
+    color: #444;
+    font-size: 16px;
+}
+
+.results-table tbody tr:hover {
+    background-color: #f3e5ff;
+    transition: background 0.3s;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    background: linear-gradient(to right, #ff9ff3, #f368e0);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.back-link:hover {
+    background: linear-gradient(to right, #f368e0, #ff9ff3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(243, 104, 224, 0.4);
+}
+
+/* Admin Add Product Page */
+.admin-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(147, 112, 219, 0.25);
+    max-width: 600px;
+    margin: 40px auto;
+    backdrop-filter: blur(10px);
+}
+
+.admin-container h2 {
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.admin-form label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="number"],
+.admin-form select {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 22px;
+    border: 2px solid #d8bfd8;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #fafafa;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.admin-form input[type="text"]:focus,
+.admin-form input[type="number"]:focus,
+.admin-form select:focus {
+    border-color: #9370db;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.2);
+}
+
+.admin-submit {
+    width: 100%;
+    background: linear-gradient(to right, #9370db, #8a2be2);
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.admin-submit:hover {
+    background: linear-gradient(to right, #8a2be2, #9370db);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Checkout Success Page */
+.checkout-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(147, 112, 219, 0.3);
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.checkout-container h3 {
+    color: #6a5acd;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.checkout-container p {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.checkout-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #9c88ff, #8c7ae6);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 6px 18px rgba(156, 136, 255, 0.4);
+}
+
+.checkout-btn:hover {
+    background: linear-gradient(to right, #8c7ae6, #9c88ff);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(156, 136, 255, 0.6);
+}
