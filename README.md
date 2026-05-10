@@ -1,5 +1,7 @@
 ### Retailer Enterprise Database System (Best Buy Model)
 
+A web‑based Best Buy retail simulator where customers shop, admins manage products, vendors track low stock, all powered by Flask + MySQL with concurrent sales support.
+
 Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp=sharing
 
 - Database: MySQL 8.0+
