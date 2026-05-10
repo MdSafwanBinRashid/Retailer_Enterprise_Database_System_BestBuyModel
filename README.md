@@ -1,5 +1,4 @@
 ### Retailer Enterprise Database System (Best Buy Model)
-Author: Md Safwan Bin Rashid
 
 Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp=sharing
 
