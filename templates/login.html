@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Best Buy - Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="login-page">
+    <div class="login-container">
+      <h1>Best Buy</h1>
+      <form method="post">
+        <label>Email:</label>
+        <input type="text" name="email" required />
+
+        <label>Role:</label>
+        <select name="role" required>
+          <option value="customer">Customer</option>
+          <option value="admin">Admin</option>
+          <option value="vendor">Vendor</option>
+        </select>
+
+        <input type="submit" value="Login" />
+      </form>
+      <div class="register-link">
+        <p>No account? <a href="/register">Register here</a></p>
+      </div>
+    </div>
+  </body>
+</html>

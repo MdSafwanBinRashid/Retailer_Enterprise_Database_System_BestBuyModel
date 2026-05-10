@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %}
+<div class="checkout-container">
+  <h3>Checkout Complete!</h3>
+  <p>Sale <strong>#{{ sale_id }}</strong> has been recorded.</p>
+  <p>Total: <strong>${{ total }}</strong></p>
+  <a class="checkout-btn" href="/">Continue Shopping</a>
+</div>
+{% endblock %}

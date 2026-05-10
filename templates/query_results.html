@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<div class="results-container">
+  <h2>{{ query_title }}</h2>
+  <table class="results-table">
+    <thead>
+      <tr>
+        {% for col in results[0].keys() %}
+        <th>{{ col }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in results %}
+      <tr>
+        {% for value in row.values() %}
+        <td>{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <br />
+  <a class="back-link" href="/queries">← Back to Queries</a>
+</div>
+{% endblock %}

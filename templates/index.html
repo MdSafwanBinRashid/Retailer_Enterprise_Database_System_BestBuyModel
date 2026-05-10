@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<div class="home-container">
+  <h1>Best Buy Products</h1>
+  <table class="products-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>UPC</th>
+        <th>Brand</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in products %}
+      <tr>
+        <td>{{ p.product_id }}</td>
+        <td>{{ p.UPC }}</td>
+        <td>{{ p.brand_name }}</td>
+        <td>{{ p.type_name }}</td>
+        <td>${{ p.price }}</td>
+        <td>
+          <a class="action-btn" href="/add_to_cart/{{ p.product_id }}"
+            >Add to Cart</a
+          >
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <br />
+  <a class="cart-link" href="/cart">View Cart</a>
+</div>
+{% endblock %}
