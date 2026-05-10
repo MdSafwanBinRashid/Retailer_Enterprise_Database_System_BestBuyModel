@@ -1,4 +1,4 @@
-CSC 411/511 DBMS Design Course Project
+### CSC 411/511 DBMS Design Course Project
 Project: Retailer Enterprise Database System (Best Buy Model)
 Author: Md Safwan Bin Rashid
 
