@@ -6,7 +6,7 @@ def make_sale(customer_id, product_id, quantity):
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="FUSIONtec777@",
+        password="*********",
         database="bestbuy_db"
     )
     cursor = conn.cursor()
