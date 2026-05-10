@@ -8,7 +8,7 @@ Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp
 - Database Connector: mysql-connector-python
 - Testing: Python threading for concurrency tests
 
-### RUN THE APPLICATION
+#### RUN THE APPLICATION
 1. pip install flask mysql-connector-python==8.0.33
 2. Start the Flask development server: source venv/bin/activate (won't be the same for you tho)
 3. python app.py
@@ -16,7 +16,7 @@ Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp
    http://127.0.0.1:5000/login
 
 
-## TEST ACCOUNTS
+#### TEST ACCOUNTS
 
 1. CUSTOMER:
    - Email: Any email
@@ -34,7 +34,7 @@ Demo: https://drive.google.com/file/d/11os9r0gcYer6dvo-Df9w1cJ0i8B_1_7M/view?usp
    - Features: View low-stock products
 
 
-## CONCURRENCY TESTING
+#### CONCURRENCY TESTING
 
 1. The app should NOT be running
 2. Run the concurrency test:
